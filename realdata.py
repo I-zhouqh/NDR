@@ -11,14 +11,6 @@ from torch import nn
 from sklearn import datasets
 
 
-# 1.将read real data 测试并merge进去，
-# 要求能够给出预测结果（yhat）在一个sheet里面！这个目前是没有的  （或者还有神经网络的预测结果）    0.5
-# 神经网络的test error和NDR的test error会有算，他们的格式是文本，是否应该规范下？没有单纯神经网络的情况下不会储存test error，这是一个bug，要改。  11
-# 2.改summary_result:加个std，同时要留下一个接口，以后还要能summary test结果（好像是有的，现在）    11
-# 4.大改基本结构，readdata和generatedata没有必要混在一起了。
-# 能不能将testdata，evaldata都储存了？
-# all in github  
-
 username = getpass.getuser()
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
